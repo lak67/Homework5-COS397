@@ -7,8 +7,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "basic_sort_UNIQUE_SUFFIX"
 version = "0.0.1"
-authors = [{ name="Author1", email="author1@maine.edu" },
-           { name="Author2", email="author2@maine.edu" },
+authors = [{ name="Hannah Yelle", email="hannah.yelle@maine.edu" },
+           { name="Nicole Cortez", email="nicole.cortez@maine.edu" },
+           { name="Raven Goodell", email="raven.goodell@maine.edu" },
+           { name="Donato", email="donato.apon@maine.edu" },
+           { name="Lak Silva", email="lakshmana.silva@maine.edu" },
 ]
 description = "An exercise in the capstone course"
 readme = "README.md"
@@ -23,3 +26,6 @@ classifiers = [
 "Bug Tracker" = "https://github.com/pypa/python_package_exercise/issues"
 
 
+[tool.black]
+line-length = 79
+target-version = ['py27']
