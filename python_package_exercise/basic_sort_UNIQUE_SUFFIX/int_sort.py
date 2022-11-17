@@ -23,6 +23,12 @@ This module sorts lists of integers...
 
 def bubble(int_list):
 
+    # need to add parameter types
+    """
+    :param int_list: an unsorted list of integers
+    :returns: a list of integers sorted in ascending order, the same size as int_list
+    """
+
     n = len(int_list)
     # optimize code, so if the array is already sorted, it doesn't need
     # to go through the entire process
