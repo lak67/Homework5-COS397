@@ -22,6 +22,7 @@ This module sorts lists of integers...
 
 
 def bubble(int_list):
+
     n = len(int_list)
     # optimize code, so if the array is already sorted, it doesn't need
     # to go through the entire process
@@ -49,6 +50,16 @@ def bubble(int_list):
 
 
 def quick(int_list, low, high):
+    """
+
+    :param1 :
+        int_list: list given by the user
+    :param2 : 
+        low: this is the first item of the array
+    :param3 :
+        high: this is the last item of the array
+    :returns: returns the list in a sorted format from lowest to highest
+    """
     if low < high:
      
         # Find pivot element such that
