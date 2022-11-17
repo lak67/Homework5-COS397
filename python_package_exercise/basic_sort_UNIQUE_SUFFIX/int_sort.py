@@ -56,7 +56,20 @@ def quick(int_list):
 
 
 def insertion(int_list):
-    """
-    insertion docstring
-    """
+     
+    # Traverse through 1 to len(arr)
+    for i in range(1, len(int_list)):
+ 
+        key = int_list[i]
+ 
+        # Move elements of arr[0..i-1], that are
+        # greater than key, to one position ahead
+        # of their current position
+        j = i-1
+        while j >=0 and key < int_list[j] :
+                int_list[j+1] = int_list[j]
+                j -= 1
+        int_list[j+1] = key
+
     print("insertion sort")
+    return int_list
