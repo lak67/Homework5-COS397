@@ -84,7 +84,12 @@ def quick(int_list, low, high):
 
 
 def insertion(int_list):
-     
+    """
+    :param int_list: 
+        an unsorted list of integers
+    :returns: the list of integers sorted in ascending order
+    """
+
     # Traverse through 1 to len(arr)
     for i in range(1, len(int_list)):
  
@@ -101,3 +106,4 @@ def insertion(int_list):
 
     print("insertion sort")
     return (int_list)
+
