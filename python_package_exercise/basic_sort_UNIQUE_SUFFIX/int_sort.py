@@ -45,8 +45,7 @@ def bubble(int_list):
             # can just exit the main loop.
             return
     print("bubble sort")
-    for i in range(len(int_list)):
-        print("% d" % int_list[i], end=" ")
+    return(int_list)
 
 
 def quick(int_list):
