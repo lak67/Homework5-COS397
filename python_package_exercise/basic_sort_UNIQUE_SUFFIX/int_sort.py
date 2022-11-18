@@ -74,10 +74,10 @@ def quick(int_list, low, high):
         pi = partition(int_list, low, high)
  
         # Recursive call on the left of pivot
-        quickSort(int_list, low, pi - 1)
+        quick(int_list, low, pi - 1)
  
         # Recursive call on the right of pivot
-        quickSort(int_list, pi + 1, high)
+        quick(int_list, pi + 1, high)
 
     print("quick sort")
     return(int_list)
