@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+basic_sort_shell_software/__init__.py
+basic_sort_shell_software/int_sort.py
+basic_sort_shell_software/basic_sort_shell_software.egg-info/PKG-INFO
+basic_sort_shell_software/basic_sort_shell_software.egg-info/SOURCES.txt
+basic_sort_shell_software/basic_sort_shell_software.egg-info/dependency_links.txt
+basic_sort_shell_software/basic_sort_shell_software.egg-info/top_level.txt
+test/test_basic_sort.py
