@@ -5,7 +5,7 @@ requires = ["setuptools>=61.0",
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "basic_sort_UNIQUE_SUFFIX"
+name = "basic_sort_shell_software"
 version = "0.0.1"
 authors = [{ name="Hannah Yelle", email="hannah.yelle@maine.edu" },
            { name="Nicole Cortez", email="nicole.cortez@maine.edu" },
