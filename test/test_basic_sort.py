@@ -18,6 +18,7 @@
 
 import pytest
 import numpy as np
+from int_sort import bubble
 
 def is_sorted(self, int_list):
     """
@@ -33,7 +34,7 @@ def int_lists():
 			np.random.randint(low=-10, high=200, size=5)] 
     
 def test_bubble(int_lists):
-    assert True
+    assert bubble([3,2,1]) == [1,2,3]
 
 def test_quick(int_lists):
     assert True
