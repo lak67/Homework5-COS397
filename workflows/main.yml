@@ -81,7 +81,7 @@ jobs:
         python -m build
         # see that the dist directory contains the wheel
         ls -la dist
-    - name: Upload package
+    - name: Publish package
       if: github.event_name == 'push'
       # uses: actions/upload-artifact@v3
       # with:
@@ -90,4 +90,4 @@ jobs:
       # run:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        password: pypi-AgENdGVzdC5weXBpLm9yZwIkNmJjMjI5MGItYzk1NS00NWNkLWJlMzUtYWFkNmYxZWIwMzEyAAIqWzMsIjVmN2ZjMTE4LTIwY2QtNDYwMS04ODE3LTRiZGI2MGRkYjNmOSJdAAAGIKRL6lTaSOXBQW8C_xfERe1zaK_V2Hqt4ZAhRKDkojFN
+        password: ${{ secrets.PYPI_API_TOKEN }}
