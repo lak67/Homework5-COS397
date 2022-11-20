@@ -10,8 +10,8 @@ the View to display "Hidden items".
 
 You will need to:
 1. Add .pre-commit-config.yml which:  
-    1. Limits maximal file size.
-    1. Runs the black and flake8 linters.
+    1. Limits maxima file size.
+    1. Runs the bllack and flake8 linters.
     1. Detect presence of aws credentials private keys.    
 1. Implement the algorithms for bubble, quick and insertion sort, see sort_lib directory,
 code should be documented using standard Python practices (there are several [docstring 
