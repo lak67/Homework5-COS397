@@ -83,7 +83,11 @@ jobs:
         ls -la dist
     - name: Upload package
       if: github.event_name == 'push'
-      uses: actions/upload-artifact@v3
+      # uses: actions/upload-artifact@v3
+      # with:
+      #   name: python-packages ${{ matrix.os }} ${{ matrix.python-version }}
+      #   path: dist
+      # run:
+      uses: pypa/gh-action-pypi-publish@release/v1
       with:
-        name: python-packages
-        path: dist
+        password: pypi-AgENdGVzdC5weXBpLm9yZwIkNmJjMjI5MGItYzk1NS00NWNkLWJlMzUtYWFkNmYxZWIwMzEyAAIqWzMsIjVmN2ZjMTE4LTIwY2QtNDYwMS04ODE3LTRiZGI2MGRkYjNmOSJdAAAGIKRL6lTaSOXBQW8C_xfERe1zaK_V2Hqt4ZAhRKDkojFN
