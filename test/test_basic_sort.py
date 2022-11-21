@@ -18,7 +18,7 @@
 
 import pytest
 import numpy as np
-from basic_sort_UNIQUE_SUFFIX.int_sort import bubble
+from basic_sort_shell_software.int_sort import bubble
 
 
 def is_sorted(self, int_list):
