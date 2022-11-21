@@ -23,10 +23,17 @@ select one and be consistent).
 
 
 1. Implement testing using the [pytest](https://docs.pytest.org/en/6.2.x/) framework, see test directory.
+
 1. Implement linting, style checking using both [flake8](https://flake8.pycqa.org/en/latest/) and 
 [black](https://black.readthedocs.io/en/stable/). 
+
+Linting is implemented in the .pre-commit-config file to lint before commits, as well as in the .github/workflows/main.yml file (which lints, tests, and packages).
+
 1. Modify the GitHub actions workflow so that it tests and builds the package for all 
 three operating systems (OSX/Linux/Win) and for Python versions 3.9 and 3.10. Read more about [Distributing Python packages](https://docs.python.org/3/distributing/index.html).
+
+The Github actions workflow was edited by editing the main.yml file found under .github/workflows/. In this file for each job a matrix was specified with an OS argument and python-version argument. The OS argument specifies all three operating systems [ubuntu-latest, windows-latest, macos-latest] and python versions [3.9.0, 3.10.0]. 
+
 1. Modify this file to describe this repository and the DevOps workflow you implemented (add badges to this file showing testing status).
 1. **Optional**: Add a job to the workflow which uploads the wheel to [TestPyPI](https://test.pypi.org/). As every package on TestPyPI is required to have a unique name you need to update the UNIQUE_SUFFIX both in the directory name and in the .toml file. Possibly use your team number.
     >**Warning**: Do not upload to the authoritative Python Package Index (PyPI).  
