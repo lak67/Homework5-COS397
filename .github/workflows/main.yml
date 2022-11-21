@@ -61,7 +61,7 @@ jobs:
     needs: test
     strategy:
       matrix:
-        os: [windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest, macos-latest]
         python-version: [3.9.0, 3.10.0]
     runs-on: ${{ matrix.os }}
     steps:

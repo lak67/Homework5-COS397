@@ -1,7 +1,6 @@
 # DevOps Exercise
 
-This is a skeleton repository for your exercise. 
-The goal of this exercise is to implement a Python package for sorting integer 
+This project is Shell Software's implementation of a Python package for sorting integer 
 lists using the DevOps software development approach.
 
 > **Warning**: If working on windows, some directories and files in this archive
@@ -12,11 +11,17 @@ You will need to:
 1. Add .pre-commit-config.yml which:  
     1. Limits maxima file size.
     1. Runs the bllack and flake8 linters.
-    1. Detect presence of aws credentials private keys.    
+    1. Detect presence of aws credentials private keys. 
+The .pre-commit-config.yaml file limits the maxima file size to 200kb. It detects AWS credentials, but allows there to be missing credentials using an argument. Black uses version 22.8.0 and uses the --diff arg to show what is changed in a file. The pyproject.toml file specifies more settings for the black tool including: line-length and includes different python versions. Flake8 uses version 5.0.4 and has a maximum line length of 120 and excludes the files under .git, __pycache__ files, and build files. 
+    To run the linting locally first install all dependencies, then run the pre-commit command.
+    python3 -m pip install -r requirements-dev.txt
+    pre-commit run --all-files
 1. Implement the algorithms for bubble, quick and insertion sort, see sort_lib directory,
 code should be documented using standard Python practices (there are several [docstring 
 styles](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)
 select one and be consistent).
+
+
 1. Implement testing using the [pytest](https://docs.pytest.org/en/6.2.x/) framework, see test directory.
 1. Implement linting, style checking using both [flake8](https://flake8.pycqa.org/en/latest/) and 
 [black](https://black.readthedocs.io/en/stable/). 
