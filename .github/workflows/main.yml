@@ -56,44 +56,44 @@ jobs:
         python -m pytest
 
 
-  # packaging:
-  #   # only run the packaging if testing passed
-  #   needs: test
-  #   strategy:
-  #     matrix:
-  #       os: [ubuntu-latest, windows-latest, macos-latest]
-  #       python-version: [3.9.0, 3.10.0]
-  #   runs-on: ${{ matrix.os }}
-  #   steps:
-  #   - uses: actions/checkout@v3
-  #     with:
-  #       fetch-depth: 0
-  #   - name: Set up Python ${{ matrix.python-version }}
-  #     uses: actions/setup-python@v4
-  #     with:
-  #       python-version: ${{ matrix.python-version }}
-  #   - name: Install dependencies
-  #     run: |
-  #       python -m pip install --upgrade pip
-  #       python -m pip install -r requirements-dev.txt
-  #   - name: Build package
-  #     run: |
-  #       python -m build
-  #       # see that the dist directory contains the wheel
-  #       ls -la dist
-  #   # - name: Publish package
-  #   #   if: github.event_name == 'push'
-  #   #   # uses: actions/upload-artifact@v3
-  #   #   # with:
-  #   #   #   name: python-packages ${{ matrix.os }} ${{ matrix.python-version }}
-  #   #   #   path: dist
-  #   #   # run:
-  #   #   uses: pypa/gh-action-pypi-publish@release/v1
-  #   #   with:
-  #   #     password: ${{ secrets.PYPI_API_TOKEN }} test
+  packaging:
+    # only run the packaging if testing passed
+    needs: test
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: [3.9.0, 3.10.0]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install -r requirements-dev.txt
+    - name: Build package
+      run: |
+        python -m build
+        # see that the dist directory contains the wheel
+        ls -la dist
+    # - name: Publish package
+    #   if: github.event_name == 'push'
+    #   # uses: actions/upload-artifact@v3
+    #   # with:
+    #   #   name: python-packages ${{ matrix.os }} ${{ matrix.python-version }}
+    #   #   path: dist
+    #   # run:
+    #   uses: pypa/gh-action-pypi-publish@release/v1
+    #   with:
+    #     password: ${{ secrets.PYPI_API_TOKEN }} test
 
-  #   - name: Publish package
-  #     uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
-  #     with:
-  #       # user: __token__
-  #       password: ${{ secrets.PYPI_API_TOKEN }}
+    - name: Publish package
+      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+      with:
+        # user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
