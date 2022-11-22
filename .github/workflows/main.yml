@@ -61,7 +61,7 @@ jobs:
     needs: test
     strategy:
       matrix:
-        os: [ubuntu-20.04]
+        os: [ubuntu-20.04, windows-latest, macos-latest]
         python-version: [3.9.0, 3.10.0]
     runs-on: ${{ matrix.os }}
     steps:
@@ -82,18 +82,8 @@ jobs:
         # see that the dist directory contains the wheel
         ls -la dist
     # - name: Publish package
-    #   if: github.event_name == 'push'
-    #   # uses: actions/upload-artifact@v3
-    #   # with:
-    #   #   name: python-packages ${{ matrix.os }} ${{ matrix.python-version }}
-    #   #   path: dist
-    #   # run:
-    #   uses: pypa/gh-action-pypi-publish@release/v1
+    #   uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
     #   with:
-    #     password: ${{ secrets.PYPI_API_TOKEN }} test
-
-    - name: Publish package
-      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
-      with:
-        user: __token__
-        password: ${{ secrets.PYPI_API_TOKEN }}
+    #     user: __token__
+    #     password: ${{ secrets.PYPI_API_TOKEN }}
+ 
