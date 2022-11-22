@@ -44,14 +44,14 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-   assert is_sorted((int_lists[0])) ==[1,2,3]
-   #assert is_sorted(bubble(int_lists[1])) ==[1,1,1]
+   #assert is_sorted(bubble(int_lists[0]))== True
+   assert is_sorted(bubble(int_lists[1])) == True
     
 
 
 
 def test_quick(int_lists):
-    assert is_sorted(quick(int_lists[2],int_lists[2][0], int_lists[2][-1]))== True
+    assert is_sorted(quick(int_lists[2],0, (len(int_lists)-1)))== True
 
 
 def test_insertion(int_lists):
