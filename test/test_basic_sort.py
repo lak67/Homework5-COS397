@@ -25,7 +25,7 @@ def is_sorted(int_list):
     flag = 0
     test_list1 = int_list[:]
     test_list1.sort()
-    if (test_list1 == int_list):
+    if (np.array_equal(test_list1, int_list)):
         flag = 1
       
     # printing result
@@ -44,10 +44,9 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-   # assert bubble(int_lists[0]) ==[1,2,3]
-   # assert bubble(int_lists[1]) ==[1,1,1]
-    assert is_sorted([3,2,1,4]) == True
-   # assert is_sorted(bubble([4,1,6,2])) == True
+   assert is_sorted((int_lists[0])) ==[1,2,3]
+   #assert is_sorted(bubble(int_lists[1])) ==[1,1,1]
+    
 
 
 
