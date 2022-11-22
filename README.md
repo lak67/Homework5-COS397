@@ -27,6 +27,9 @@ Quicksort, by 8 contributors on [GeeksforGeeks](https://www.geeksforgeeks.org/py
 Insertion sort, by 5 contributors on [GeeksforGeeks](https://www.geeksforgeeks.org/python-program-for-insertion-sort/)
 
 ## Implementation of Testing (Using PyTests)
+Standard Pytests implementation. Using pytest to assert the sorting algorithms, and checking if it is sorted with a is_sorted function. If it is sorted then it will return True, otherwise it will return False. 
+
+is_Sorted, contributed by ManJeet_04 on [GeeksforGeeks](https://www.geeksforgeeks.org/python-check-if-list-is-sorted-or-not/) 
 
 ## Implementation of Linting
 
