@@ -25,15 +25,14 @@ def is_sorted(int_list):
     flag = 0
     test_list1 = int_list[:]
     test_list1.sort()
-    if (np.array_equal(test_list1, int_list)):
+    if np.array_equal(test_list1, int_list):
         flag = 1
-      
     # printing result
-    if (flag) :
-        print ("Yes, List is sorted.")
+    if flag:
+        print("Yes, List is sorted.")
         return True
-    else :
-        print ("No, List is not sorted.")   
+    else:
+        print("No, List is not sorted.")
         return False
 
 
@@ -44,16 +43,14 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-   assert is_sorted(bubble(int_lists[0]))== True
-   assert is_sorted(bubble(int_lists[1])) == True
-    
-
+    assert is_sorted(bubble(int_lists[0]))  # == True
+    assert is_sorted(bubble(int_lists[1]))  # == True
 
 
 def test_quick(int_lists):
-    assert is_sorted(quick(int_lists[2],0, (len(int_lists)-1)))== True
+    assert is_sorted(quick(int_lists[2], 0, (len(int_lists) - 1)))  # == True
 
 
 def test_insertion(int_lists):
-    assert is_sorted(insertion(int_lists[0])) == True
-    assert is_sorted(insertion(int_lists[1])) == True
+    assert is_sorted(insertion(int_lists[0]))  # == True
+    assert is_sorted(insertion(int_lists[1]))  # == True
