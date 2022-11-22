@@ -38,8 +38,9 @@ The Github actions workflow was edited by editing the main.yml file found under 
 
 Due to issue [#401](https://github.com/actions/setup-python/issues/401) in actions/setup-python, Ubuntu has issues setting up with python version 3.10.0. To fix this, ubuntu-20.04 is used rather than ubuntu-latest. 
 
+![Successful Workflow](https://mcusercontent.com/6310a52cdfd4835b6f5b53169/images/a038ffe4-7c12-10b3-5a6f-edb7adaa72dd.png)
 ## Badges added to this README.md File
-
+The badges added to this workflow states if the workflow passes. 
 1. **Optional**: Add a job to the workflow which uploads the wheel to [TestPyPI](https://test.pypi.org/). As every package on TestPyPI is required to have a unique name you need to update the UNIQUE_SUFFIX both in the directory name and in the .toml file. Possibly use your team number.
     >**Warning**: Do not upload to the authoritative Python Package Index (PyPI).  
 
