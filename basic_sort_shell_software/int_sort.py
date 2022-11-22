@@ -50,7 +50,7 @@ def bubble(int_list):
         if not swapped:
             # if we haven't needed to make a single swap, we
             # can just exit the main loop.
-            return
+            return int_list
     print("bubble sort")
     return int_list
 
