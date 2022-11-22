@@ -81,9 +81,9 @@ jobs:
         python -m build
         # see that the dist directory contains the wheel
         # ls -la dist
-    - name: Publish package
-      uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
-      with:
-        user: __token__
-        password: pypi-AgENdGVzdC5weXBpLm9yZwIkZWIxMDJhODMtMGI0ZS00ZTA5LWE4N2UtZmIzMTY0ZjMzOTUyAAIqWzMsIjVmN2ZjMTE4LTIwY2QtNDYwMS04ODE3LTRiZGI2MGRkYjNmOSJdAAAGIGSii-_9ffTtTiAuOE6YTH8JwQTtGiG2NdUcSkJDjrC
+    # - name: Publish package
+    #   uses: pypa/gh-action-pypi-publish@27b31702a0e7fc50959f5ad993c78deac1bdfc29
+    #   with:
+    #     user: __token__
+    #     password: pypi-AgENdGVzdC5weXBpLm9yZwIkZWIxMDJhODMtMGI0ZS00ZTA5LWE4N2UtZmIzMTY0ZjMzOTUyAAIqWzMsIjVmN2ZjMTE4LTIwY2QtNDYwMS04ODE3LTRiZGI2MGRkYjNmOSJdAAAGIGSii-_9ffTtTiAuOE6YTH8JwQTtGiG2NdUcSkJDjrC
  
