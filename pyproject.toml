@@ -10,7 +10,7 @@ version = "0.0.1"
 authors = [{ name="Hannah Yelle", email="hannah.yelle@maine.edu" },
            { name="Nicole Cortez", email="nicole.cortez@maine.edu" },
            { name="Raven Goodell", email="raven.goodell@maine.edu" },
-           { name="Donato", email="donato.apon@maine.edu" },
+           { name="Donato Apon", email="donato.apon@maine.edu" },
            { name="Lak Silva", email="lakshmana.silva@maine.edu" },
 ]
 description = "An exercise in the capstone course"
