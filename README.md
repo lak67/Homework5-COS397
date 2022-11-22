@@ -14,7 +14,11 @@ To run the linting locally first install all dependencies, then run the pre-comm
 > pre-commit run --all-files
 
 ## Implementation of Sorting Algorithms
+Standard Python implementations of bubble sort, quicksort, and insertion sort have been defined in `/basic_sort_shell_software/int_sort.py`. The implementations for the sorting algorithms have been replicated from the following sources:
 
+Bubble sort, by 9 contributors on GeeksforGeeks: https://www.geeksforgeeks.org/python-program-for-bubble-sort/
+Quicksort, by 8 contributors on GeeksforGeeks: https://www.geeksforgeeks.org/python-program-for-quicksort/
+Insertion sort, by 5 contributors on GeeksforGeeks: https://www.geeksforgeeks.org/python-program-for-insertion-sort/
 
 ## Implementation of Testing (Using PyTests)
 
