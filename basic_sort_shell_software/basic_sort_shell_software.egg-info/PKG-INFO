@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: basic-sort-shell-software
 Version: 0.0.1
 Summary: An exercise in the capstone course
-Author-email: Hannah Yelle <hannah.yelle@maine.edu>, Nicole Cortez <nicole.cortez@maine.edu>, Raven Goodell <raven.goodell@maine.edu>, Donato <donato.apon@maine.edu>, Lak Silva <lakshmana.silva@maine.edu>
+Author-email: Hannah Yelle <hannah.yelle@maine.edu>, Nicole Cortez <nicole.cortez@maine.edu>, Raven Goodell <raven.goodell@maine.edu>, Donato Apon <donato.apon@maine.edu>, Lak Silva <lakshmana.silva@maine.edu>
 Project-URL: Bug Tracker, https://github.com/pypa/python_package_exercise/issues
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: Apache 2.0

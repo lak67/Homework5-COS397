@@ -18,7 +18,7 @@
 
 import pytest
 import numpy as np
-from basic_sort_shell_software.int_sort import bubble
+from basic_sort_shell_software.int_sort import bubble, quick, insertion
 
 
 def is_sorted(self, int_list):
@@ -35,12 +35,15 @@ def int_lists():
 
 
 def test_bubble(int_lists):
-    assert bubble([3, 2, 1]) == [1, 2, 3]
+    assert bubble(int_lists[0]) == [1, 2, 3]
+    assert bubble(int_lists[1]) == [1, 1, 1]
 
 
 def test_quick(int_lists):
-    assert True
+    assert quick(int_lists[0], int_lists[2], int_lists[2]) == [1,2,3]
+    assert quick(int_lists[1], int_lists[2], int_lists[2]) == [1,1,1]
 
 
 def test_insertion(int_lists):
-    assert True
+    assert insertion(int_lists[0]) == [1,2,3]
+    assert insertion(int_lists[1]) == [1,1,1]
